@@ -1,1 +1,0 @@
-sudo docker run --name prometheus -p 9090:9090 --rm prometheus

@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  node-exporter:
+    build: ./node_exporter/
+    ports:
+      - "9100:9100"
+
+  prometheus:
+    build: ./prometheus/
+    depends_on:
+      - node-exporter
+    ports:
+      - "9090:9090"
