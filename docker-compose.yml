@@ -1,14 +1,44 @@
 version: '3.7'
 
+volumes:
+  mariadb_data:
+
 services:
+
+  mariadb:
+    image: mariadb
+    env_file:
+      - .env
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
   node-exporter:
-    build: ./node_exporter/
+    image: bitnami/node-exporter
     ports:
       - "9100:9100"
+
+  mysqld-exporter:
+    image: bitnami/mysqld-exporter
+    depends_on:
+      - mariadb
+    restart: unless-stopped
+    command:
+      - "--config.my-cnf=/etc/mysql/my.cnf"
+    env_file:
+      - .env
+    environment:
+      DATA_SOURCE_NAME: ${MYSQL_USER}:${MYSQL_PASSWORD}@(mariadb:3306)/${MYSQL_DATABASE}
+    volumes:
+      - ./my.cnf:/etc/mysql/my.cnf
+    ports:
+      - "9104:9104"
 
   prometheus:
     build: ./prometheus/
     depends_on:
       - node-exporter
+      - mysqld-exporter
     ports:
       - "9090:9090"
