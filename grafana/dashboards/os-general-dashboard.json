@@ -24,7 +24,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ddocytnouehvka"
+        "uid": "Prometheus"
       },
       "description": "",
       "fieldConfig": {
@@ -105,7 +105,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddocytnouehvka"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "exemplar": false,
@@ -122,7 +122,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ddocytnouehvka"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -202,7 +202,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddocytnouehvka"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "node_filesystem_avail_bytes",
@@ -218,7 +218,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ddocytnouehvka"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -298,7 +298,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddocytnouehvka"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "sum(rate(node_network_receive_bytes_total[5m])) by (instance)",
@@ -314,7 +314,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "ddocytnouehvka"
+        "uid": "Prometheus"
       },
       "fieldConfig": {
         "defaults": {
@@ -394,7 +394,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "ddocytnouehvka"
+            "uid": "Prometheus"
           },
           "editorMode": "code",
           "expr": "node_filefd_allocated",

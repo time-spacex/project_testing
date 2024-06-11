@@ -24,7 +24,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "ddocytnouehvka"
+          "uid": "Prometheus"
         },
         "fieldConfig": {
           "defaults": {
@@ -104,7 +104,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "ddocytnouehvka"
+              "uid": "Prometheus"
             },
             "editorMode": "code",
             "expr": "mysql_global_status_connections",
@@ -120,7 +120,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "ddocytnouehvka"
+          "uid": "Prometheus"
         },
         "fieldConfig": {
           "defaults": {
@@ -200,7 +200,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "ddocytnouehvka"
+              "uid": "Prometheus"
             },
             "editorMode": "code",
             "expr": "mysql_global_status_innodb_data_writes",
@@ -216,7 +216,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "ddocytnouehvka"
+          "uid": "Prometheus"
         },
         "fieldConfig": {
           "defaults": {
@@ -296,7 +296,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "ddocytnouehvka"
+              "uid": "Prometheus"
             },
             "editorMode": "code",
             "expr": "mysql_global_status_threads_connected",
@@ -312,7 +312,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "ddocytnouehvka"
+          "uid": "Prometheus"
         },
         "fieldConfig": {
           "defaults": {
@@ -392,7 +392,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "ddocytnouehvka"
+              "uid": "Prometheus"
             },
             "editorMode": "code",
             "expr": "mysql_global_status_bytes_sent",
@@ -408,7 +408,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "ddocytnouehvka"
+          "uid": "Prometheus"
         },
         "fieldConfig": {
           "defaults": {
@@ -488,7 +488,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "ddocytnouehvka"
+              "uid": "Prometheus"
             },
             "editorMode": "code",
             "expr": "mysql_global_status_innodb_data_reads",
@@ -504,7 +504,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "ddocytnouehvka"
+          "uid": "Prometheus"
         },
         "fieldConfig": {
           "defaults": {
@@ -584,7 +584,7 @@
           {
             "datasource": {
               "type": "prometheus",
-              "uid": "ddocytnouehvka"
+              "uid": "Prometheus"
             },
             "editorMode": "code",
             "expr": "mysql_global_status_bytes_received",
