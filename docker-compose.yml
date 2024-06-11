@@ -14,6 +14,13 @@ services:
       - "3306:3306"
     volumes:
       - mariadb_data:/var/lib/mysql
+    command: >
+      sh -c "
+      echo 'CREATE USER IF NOT EXISTS \"${MYSQL_USER}\"@\"%\" IDENTIFIED BY \"${MYSQL_PASSWORD}\";' > /docker-entrypoint-initdb.d/init-db.sql &&
+      echo 'GRANT PROCESS, REPLICATION CLIENT, SLAVE MONITOR, SELECT ON *.* TO \"${MYSQL_USER}\"@\"%\";' >> /docker-entrypoint-initdb.d/init-db.sql &&
+      echo 'FLUSH PRIVILEGES;' >> /docker-entrypoint-initdb.d/init-db.sql &&
+      docker-entrypoint.sh mariadbd
+      "
 
   node-exporter:
     image: bitnami/node-exporter
@@ -25,10 +32,10 @@ services:
     depends_on:
       - mariadb
     restart: unless-stopped
-    command:
-      - "--config.my-cnf=/etc/mysql/my.cnf"
     env_file:
       - .env
+    command:
+      - "--config.my-cnf=/etc/mysql/my.cnf"
     environment:
       DATA_SOURCE_NAME: ${MYSQL_USER}:${MYSQL_PASSWORD}@(mariadb:3306)/${MYSQL_DATABASE}
     volumes:
