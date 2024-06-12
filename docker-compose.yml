@@ -62,3 +62,12 @@ services:
       - ./grafana/dashboards:/etc/grafana/dashboards
     ports:
       - "3000:3000"
+
+  nginx:
+    image: nginx
+    depends_on:
+      - grafana
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"
