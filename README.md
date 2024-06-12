@@ -26,3 +26,7 @@ Last thing - run docker compose file for deploying containers on a local machine
 ```
 sudo docker compose up --build
 ```
+
+![screenshot](https://s460vlx.storage.yandex.net/rdisk/36fc17d9a872fb64211dd2e65eed9d6872d3b542b4f1a5707e526ffba5511867/6669ec4e/IoIOxktzTT0sH_9TxoiNPY4Q7w1s5D3nD2n2ITKaPDZ58pPkWxfsYSbgFftuG4kdoeaxCENytih6yv--kV7m3g==?uid=30479285&filename=%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82%2012-06-2024%20174250.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=30479285&fsize=19468&hid=a163d9695175117ece2a400410ccb7c4&media_type=image&tknv=v2&etag=21dd39bd22e2825c3af93754d84801ed&ts=61ab5c1f92f80&s=fd5934f5016541608e6633793bc6ecbf683ac0ad81484a35518cc90f25549116&pb=U2FsdGVkX18B7JVTRKYnqe5pTaMdIqT5NKj8F5RKoI0IqAdDss-2pFKi8lyBw0mNtkXp0R9gS5W0yUA8d6Nxknz5RFVh70fRVlfA3uVq8HM)
+
+![screenshot](https://s526vla.storage.yandex.net/rdisk/fc187fdc5ac1df37b5eaa8daee4fd403f0b124ccf1fb13cdf4fa2f9b8000fa10/66699dfc/IoIOxktzTT0sH_9TxoiNPV1ygLk8N3qDdxW2bkugrvnKJJ5GzjpXiTi_uaouvrZKntunFOiwN2Pi2_uLhN1YbA==?uid=30479285&filename=%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82%2012-06-2024%20120414.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=30479285&fsize=28446&hid=c6761ada1e9fc3e552373e46d67f0dec&media_type=image&tknv=v2&etag=08364bbeefd52386cc4d02d4e429c832&ts=61ab116e67700&s=b3f7a7b4742884e02c03150badf97a27c3efd72d3046b53332b96983edd1de78&pb=U2FsdGVkX1_J_Td0zv6s8veWmz8VqulkzwOsjvvovnq8J6wR0DEI3pEBOdOhg5Svf-MazI3HzcmxE98AdzMp3NwwgKTZx5Z7drHh_zsOnwE)
