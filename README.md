@@ -15,7 +15,7 @@ sudo docker info
 ```
 Second - clone git repository
 ```
-git clone git@github.com:time-spacex/project_testing.git
+git clone https://github.com/time-spacex/project_testing.git
 ```
 After the repository has been downloaded, run add_metrics_local.sh - this script will add an entry to your hosts file so that the metrics.local is available.
 ```
