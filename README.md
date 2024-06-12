@@ -27,6 +27,6 @@ Last thing - run docker compose file for deploying containers on a local machine
 sudo docker compose up --build
 ```
 
-(https://disk.yandex.ru/i/KV_dH83sYFFeYA)
+![screenshot](https://disk.yandex.ru/i/KV_dH83sYFFeYA)
 
-(https://disk.yandex.ru/i/RqMQH8nyUyFP7w)
+![screenshot](https://disk.yandex.ru/i/RqMQH8nyUyFP7w)
